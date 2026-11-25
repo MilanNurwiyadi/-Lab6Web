@@ -65,7 +65,7 @@ lab6_dom_event/
 4. **(Mengubah Kelas & Gaya CSS):** Menggunakan `classList.toggle()` untuk mengaktifkan dan menonaktifkan kelas `.highlight` serta `.teks-besar`.  
    ![gaya kelas css](latihan/image/latihan3-gaya%20kelas%20css.png)
 5. **(Event `input` & Penghitung Karakter):** Menghitung panjang teks (`value.length`) secara _real-time_ saat pengguna mengetik pada kolom input.  
-   [event input](latihan/image/latihan4-event%20input.png)
+   ![event input](latihan/image/latihan4-event%20input.png)
 6. **(Validasi Form Pendaftaran):** Menggunakan `event.preventDefault()` pada event `submit` untuk memeriksa input kosong, format email dengan _Regular Expression_, dan rentang usia `17–100`.  
    ![validasi form](latihan/image/latihan5-validasi%20form.png)
 7. **(To-Do List Sederhana):** Membuat elemen `<li>` secara dinamis dengan `document.createElement()`, menandai tugas selesai menggunakan `classList.toggle("selesai")`, serta menampilkan teks pengguna secara aman dengan `textContent`.  
