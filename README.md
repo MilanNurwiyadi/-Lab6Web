@@ -93,7 +93,7 @@ lab6_dom_event/
 
 # Mini Project: Form Pendaftaran Workshop
 
-Repository ini berisi hasil pengerjaan **Mini Project Praktikum 6** Mata Kuliah Pemrograman Web (Pertemuan 7), yaitu aplikasi web interaktif **Form Pendaftaran Workshop** menggunakan HTML, CSS, dan JavaScript DOM & Event Handling.
+Repository ini berisi hasil pengerjaan **Mini Project Praktikum 6** Mata Kuliah Pemrograman Web (Pertemuan 10), yaitu aplikasi web interaktif **Form Pendaftaran Workshop** menggunakan HTML, CSS, dan JavaScript DOM & Event Handling.
 
 ---
 
