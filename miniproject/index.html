@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Pendaftaran Workshop</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <main class="card">
+        <header class="card-header">
+            <h1>Pendaftaran Workshop</h1>
+            <p>Lengkapi data berikut untuk mendaftar sesi workshop</p>
+        </header>
+
+        <form id="formPendaftaranWorkshop" novalidate>
+            <!-- Nama Lengkap + Penghitung Karakter -->
+            <div class="field-group">
+                <label for="nama">Nama Lengkap <span class="wajib">*</span></label>
+                <input type="text" id="nama" name="nama" maxlength="60" placeholder="Masukkan nama lengkap">
+                <small class="helper-text">Jumlah karakter: <span id="hitungKarakter">0</span>/60 (minimal 3 karakter)</small>
+            </div>
+
+            <!-- Email -->
+            <div class="field-group">
+                <label for="email">Email <span class="wajib">*</span></label>
+                <input type="email" id="email" name="email" placeholder="nama@contoh.com">
+            </div>
+
+            <!-- Pilihan Sesi -->
+            <div class="field-group">
+                <label for="sesi">Pilihan Sesi <span class="wajib">*</span></label>
+                <select id="sesi" name="sesi">
+                    <option value="">-- Pilih Sesi --</option>
+                    <option value="Sesi Pagi (09.00 - 11.30 WIB) - Dasar DOM & Event">Sesi Pagi (09.00 - 11.30 WIB) - Dasar DOM &amp; Event</option>
+                    <option value="Sesi Siang (13.00 - 15.30 WIB) - Validasi & Interaksi Form">Sesi Siang (13.00 - 15.30 WIB) - Validasi &amp; Interaksi Form</option>
+                    <option value="Sesi Sore (16.00 - 18.00 WIB) - Mini Project & Debugging">Sesi Sore (16.00 - 18.00 WIB) - Mini Project &amp; Debugging</option>
+                </select>
+            </div>
+
+            <!-- Ringkasan Input Langsung -->
+            <section class="ringkasan-card" aria-label="Ringkasan input">
+                <h2>Ringkasan Pendaftaran</h2>
+                <p><strong>Nama:</strong> <span id="ringkasanNama">-</span></p>
+                <p><strong>Email:</strong> <span id="ringkasanEmail">-</span></p>
+                <p><strong>Sesi:</strong> <span id="ringkasanSesi">Belum dipilih</span></p>
+            </section>
+
+            <!-- Pesan Kesalahan / Sukses -->
+            <div id="pesanNotifikasi" class="notifikasi" aria-live="polite"></div>
+
+            <!-- Tombol Kirim & Reset -->
+            <div class="aksi-group">
+                <button type="submit" id="tombolDaftar" class="btn btn-utama">Daftar Workshop</button>
+                <button type="button" id="tombolReset" class="btn btn-sekunder">Reset Input</button>
+            </div>
+        </form>
+    </main>
+</body>
+</html>
