@@ -58,17 +58,17 @@ lab6_dom_event/
 ### A. Tahap Persiapan & Latihan Praktikum
 
 1. Membuat struktur folder kerja dan memisahkan kode ke dalam tiga file (`index.html`, `style.css`, `script.js`) dengan menghubungkan JavaScript menggunakan atribut `defer`.
-2. **(Mengubah Teks dengan DOM):** Memilih elemen berdasarkan `id` dan memperbarui isi teks menggunakan properti `textContent`.
+2. **(Mengubah Teks dengan DOM):** Memilih elemen berdasarkan `id` dan memperbarui isi teks menggunakan properti `textContent`.  
    ![mengubah teks dengan DOM](latihan/image/latihan1-mengubah%20teks%20DOM.png)
-3. **(Event `click`):** Menambahkan `addEventListener("click", ...)` pada tombol untuk memperbarui teks beserta stempel waktu (`new Date().toLocaleTimeString()`).
+3. **(Event `click`):** Menambahkan `addEventListener("click", ...)` pada tombol untuk memperbarui teks beserta stempel waktu (`new Date().toLocaleTimeString()`).  
    ![event click](latihan/image/latihan2-event-click.png)
-4. **(Mengubah Kelas & Gaya CSS):** Menggunakan `classList.toggle()` untuk mengaktifkan dan menonaktifkan kelas `.highlight` serta `.teks-besar`.
+4. **(Mengubah Kelas & Gaya CSS):** Menggunakan `classList.toggle()` untuk mengaktifkan dan menonaktifkan kelas `.highlight` serta `.teks-besar`.  
    ![gaya kelas css](latihan/image/latihan3-gaya%20kelas%20css.png)
-5. **(Event `input` & Penghitung Karakter):** Menghitung panjang teks (`value.length`) secara _real-time_ saat pengguna mengetik pada kolom input.
+5. **(Event `input` & Penghitung Karakter):** Menghitung panjang teks (`value.length`) secara _real-time_ saat pengguna mengetik pada kolom input.  
    [event input](latihan/image/latihan4-event%20input.png)
-6. **(Validasi Form Pendaftaran):** Menggunakan `event.preventDefault()` pada event `submit` untuk memeriksa input kosong, format email dengan _Regular Expression_, dan rentang usia `17–100`.
+6. **(Validasi Form Pendaftaran):** Menggunakan `event.preventDefault()` pada event `submit` untuk memeriksa input kosong, format email dengan _Regular Expression_, dan rentang usia `17–100`.  
    ![validasi form](latihan/image/latihan5-validasi%20form.png)
-7. **(To-Do List Sederhana):** Membuat elemen `<li>` secara dinamis dengan `document.createElement()`, menandai tugas selesai menggunakan `classList.toggle("selesai")`, serta menampilkan teks pengguna secara aman dengan `textContent`.
+7. **(To-Do List Sederhana):** Membuat elemen `<li>` secara dinamis dengan `document.createElement()`, menandai tugas selesai menggunakan `classList.toggle("selesai")`, serta menampilkan teks pengguna secara aman dengan `textContent`.  
    ![to-do list](latihan/image/latihan6-to-do-list.png)
 
 ---
@@ -191,13 +191,13 @@ lab6_dom_event/
 ## 5. Skenario Pengujian & Screenshot Hasil
 
 1. **Tampilan Awal & Live Preview Input**
-   - Mengisi nama, email, dan memilih sesi pada dropdown; penghitung karakter dan kotak ringkasan terisi secara langsung.
+   - Mengisi nama, email, dan memilih sesi pada dropdown; penghitung karakter dan kotak ringkasan terisi secara langsung.  
      ![Live Preview](miniproject/image/miniproject-live.png)
 
 2. **Pengujian Validasi Gagal (Error)**
-   - Mengirimkan nama kurang dari 3 karakter, format email salah, atau sesi belum dipilih; tampil pesan peringatan berwarna merah.
+   - Mengirimkan nama kurang dari 3 karakter, format email salah, atau sesi belum dipilih; tampil pesan peringatan berwarna merah.  
      ![Validasi Error](miniproject/image/miniproject-Message%20error.png)
 
 3. **Pengujian Validasi Berhasil (Sukses) & Reset**
-   - Mengirimkan form dengan seluruh data valid; tampil pesan konfirmasi berwarna hijau dan input kembali bersih.
+   - Mengirimkan form dengan seluruh data valid; tampil pesan konfirmasi berwarna hijau dan input kembali bersih.  
      ![Validasi Sukses](miniproject/image/miniproject-sukses.png)
